@@ -1,0 +1,5 @@
+A utility for tracing polygon paths in an Image Map and rendering in Canvas.
+
+Internet Explorer support provided by excanvas.
+
+Originally written in 2007.
