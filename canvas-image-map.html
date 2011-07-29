@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Canvas Image Map</title>
+<link rel="stylesheet" type="text/css" href="css/canvasmap.css">
+
+<!-- only download excanvas for IE -->
+<!--[if IE]>
+<script src="js/excanvas_min.js"></script>
+<![endif]-->
+
+<script src="js/jquery.js"></script>
+<script src="js/canvas_wheel.js"></script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body>
+
+<div id="colourwheel">
+	<map name="colourwheel">
+	<area alt="" shape="poly" coords="89,28,98,26,105,25,122,25,128,26,133,27,126,58,118,57,112,56,105,57,99,58" id="c1">
+	<area alt="" shape="poly" coords="133,27,126,58,136,62,143,67,148,72,171,49,162,42,154,37,146,32,137,29" id="c2">
+	<area alt="" shape="poly" coords="171,49,148,72,153,76,157,83,161,91,162,95,192,87,191,82,188,75,184,66,179,59,175,54" id="c3">
+	<area alt="" shape="poly" coords="162,95,192,87,195,99,195,119,192,130,162,122,163,111,163,102" id="c4">
+	<area alt="" shape="poly" coords="170,124,192,130,190,138,186,146,181,154,175,162,170,167,148,145,152,141,156,136,160,128,162,122" id="c5">
+	<area alt="" shape="poly" coords="148,145,170,167,164,173,157,178,149,182,140,186,133,188,125,159,132,156,139,152,144,149" id="c6">
+	<area alt="" shape="poly" coords="125,159,119,160,117,160,111,161,105,160,98,159,90,189,98,191,107,192,118,192,126,191,133,189" id="c7">
+	<area alt="" shape="poly" coords="75,145,66,154,60,161,53,168,62,175,74,182,84,187,90,188,93,177,97,162,98,158,92,156,85,153,80,149" id="c8">
+	<area alt="" shape="poly" coords="32,130,62,122,64,129,67,135,71,140,75,144,53,167,48,162,42,153,38,146,35,140,33,135" id="c9">
+	<area alt="" shape="poly" coords="61,95,32,86,29,99,29,116,32,129,62,121,60,112,60,102" id="c10">
+	<area alt="" shape="poly" coords="52,49,74,71,71,75,68,79,65,84,63,89,62,93,61,94,44,90,36,88,32,86,36,73,42,63,47,56" id="c11">
+	<area alt="" shape="poly" coords="89,28,99,59,91,61,84,64,79,68,75,72,59,55,53,49,61,43,68,37,77,33" id="c12">
+	</map>
+		
+	<canvas id="area" height="263" width="216"></canvas>
+	
+</div>
+
+		
+<img src="img/transparent.gif" width="216" height="263" border="0" class="colourwheel" usemap="#colourwheel">
+
+
+<script type="text/javascript">
+	$(document).ready(
+		function() {
+			canvasImageMap.init();
+		}
+	);
+</script>
+
+</body>
+</html>

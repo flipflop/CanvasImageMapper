@@ -1,0 +1,36 @@
+body {
+	position: relative;	
+	margin: 0;
+	padding: 0;	
+}
+
+a, img ,a img {
+	border:0;
+}
+		
+#colourwheel area {
+	cursor:pointer;
+}
+
+:focus {
+	border: 1px solid red;
+}	
+
+#area {
+	/* add image map image to canvas area */
+	background: url(../img/colour_wheel.png) no-repeat top left;
+}
+	
+.colourwheel {
+	*cursor:pointer;
+	position: absolute;
+	z-index:2;
+	top:0px;
+	left:0px;
+	/* change opacity if transparent gif is not used ---
+	opacity: 1;
+	filter:alpha(opacity=0);
+	*/
+}
+
+	
